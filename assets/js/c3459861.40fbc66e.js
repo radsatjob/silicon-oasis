@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[2108],{2415:s=>{s.exports=JSON.parse('{"label":"facebook","permalink":"/silicon-oasis/blog/tags/facebook","allTagsPath":"/silicon-oasis/blog/tags","count":1,"unlisted":false}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7859],{1589:s=>{s.exports=JSON.parse('{"label":"hola","permalink":"/silicon-oasis/blog/tags/hola","allTagsPath":"/silicon-oasis/blog/tags","count":1,"unlisted":false}')}}]);

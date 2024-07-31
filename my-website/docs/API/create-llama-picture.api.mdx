@@ -1,0 +1,467 @@
+---
+id: create-llama-picture
+title: "Create Llama Picture"
+description: "Create a picture for a llama. The picture is sent as a PNG as binary data in the body of the request."
+sidebar_label: "Create Llama Picture"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFV21v2zYQ/iu3y5cNUG0nK7BOGAqk7dZ56FpjcTcMUdDQ4tlmK5EqScXxDP334UjJll/S7gXYPlkmj/fy3PG54wa9WDhMr/FVIUoxUbmvLeFNgpJcblXlldGY4nNLwhMIqKIEzI0FAQUfGsB0SdsN5cCR9iAcCJi8fskfM6WFXYMUXoDS4JcEMyPXYObh29LHmpwfYIKmIivY5lhure55lqCjvLbKrzG93uAzEpYsptc3zU2ClbCiJE/WhU0tSsIUg5PvlMQEFcdSCb/EBNmqsiQx9bamBF2+pFJgukG/rvic0p4WZPEQC452/KJzPmgHvxQe/FK5Pg5zw4fpXpRVQQHkc0zwgtH1yhdsI8QGY4nNv7LCwVtyldGODW3wYnTOP/sqo7HuaB7AleDqPCfn5nVRrDHB3GhP2vNpUVWFykM6hu8dq9j0UKosJ8uraDA4yEk7Ad9RsH8h1sE+cuc3TZN0ms3sPeV+L4XXWwcOwT1h7rKFU8kDK5tdraR4js1N07DZx6PRMZjTXeHGYlYOqKz8GsOJE/CP9Z0olITLyRi8+UA6Sn59LPnaeBC1X5L2jD/JAVyRliDgQEN3my5rvzRW/RFyBUsSkuwgqn/8UB1o42Fuai2j3LefqxdRWBJyDXSvnHfh0MXF8aFf2cPox/fWhhvwD0tKkheq4C/lqXQnas7ke7tCr9/MQxrbQnHeKr3AJjkqyuZmV07CWrHul6mJDnKIpVv0SrrVtxP9mZwTC8KtsodFAxgw5d3PlrLJMZpu5Xo1vYM3ovtwGC8ifKeMdSI/TqeTI4Wx5tvSfmbkmqPqpVCVYkHDSjMwQbQkvzR8YyrjWHvg1xSH4S4NN92VaoZVj8PtXcfStS0wxaX3VTocFiYXxdI4nz4ZPRkd3dyJNTKQXdcErrh2YjV0rWCbAlaJLa/z/1kUSNqPH4wthccUf/ptGlBSem7C8T26uvLGEt+4k6wVicR1Ml/AS/IQC9eB0SCKAtamtjAXd8Yq355wg0xn+uwMpgZqR5HTLydjXn0Ev5saVqooQBNJ8AYsLZTzxB23dmQTMDonkEYTK4dc6C0VCb1jh0GnjAWYTYKt4M6OQbyBRc9nMTO139Hw1tG3jmzrR2zQvD494ZqLRDV5czXdOuUN3A55+xZWyi+D+rkpCrNSehHYM800AECmb29vmRcyvWlXkEqhigxTyPC74HtYeJph0klUwrmVsbIv1K09zTDTTdCb6WkLMyzDdFKKe1XWJfed89FoBHltLY8u7KkbwBsGOWSGqf0+J5IkEzCFJBtlYpZmBJIKCjQ9nkd8eZuPtRtJyNMDOV0Ixak6OwvF009gi/HiYPkTIIf9/xnlFucQrSVfWw2iKzYeYLqSDYVv9hrdzvHLyThlVfueZijCsPIuwtPzRNMq2uhczjD8fcdkEAXjtd/3NFZ2Z3EP9fpwPQEhJaiANG/c7nXd27btcjUFj9q8dFFkek88hchXEN1vXe/cynTbNkUeOLebZNWsEDNMepzpmDTD8iA35ZD7ATNrZKjR4HzwDS8xM5dC91S1A33kuN1wvcdwPdr/zx4ALXd7uvfDqhAqdOEQ7qZtLO2ohwmmvcm+2r1cuH2w2GYzE47e2qJpePljTZYfDTcJ3gmrxIxJ/nqDUjn+lpjOReHoExh8+UvbpL+Cv/kGOBlV17c1d+07UdT8DxP8QOv+qyWMKrG2gr9x+3n06lEYKHbHd82Zh54oepnnVPme0NEQxh1128WZVLhJtp2/NJLPWLHiKUWs2McmQb61vV570Fv7Q9h+fJtNlJhywTfNNtx2IOaJ+08YvPpm
+sidebar_class_name: "post api-method"
+info_path: docs/API/llama-store-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Llama Picture"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/llama/{llama_id}/picture"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create a picture for a llama. The picture is sent as a PNG as binary data in the body of the request.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"llama_id","in":"path","required":true,"schema":{"type":"integer","description":"The ID of the llama that this picture is for","examples":["1","2"],"title":"Llama Id"},"description":"The ID of the llama that this picture is for"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"image/png"}
+    value={"image/png-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        any
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Llama picture created successfully
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"llamaId"}
+                        required={true}
+                        schemaName={"Llama Id (integer)"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"integer","title":"Llama Id","description":"The ID of the llama.","examples":[1]}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"llamaId\": 0\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          The request body is empty
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"401"}
+        value={"401"}
+      >
+        <div>
+          
+          
+          Invalid API token
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"403"}
+        value={"403"}
+      >
+        <div>
+          
+          
+          Not authenticated. Send a valid API token in the Authorization header.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"404"}
+        value={"404"}
+      >
+        <div>
+          
+          
+          Llama not found
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"409"}
+        value={"409"}
+      >
+        <div>
+          
+          
+          Llama picture already exists
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"422"}
+        value={"422"}
+      >
+        <div>
+          
+          
+          Validation Error
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                detail
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object[]
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                              >
+                                Array [
+                              </div>
+                            </li><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      loc
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object[]
+                                    </span><span
+                                      className={"openapi-schema__divider"}
+                                    >
+                                      
+                                    </span><span
+                                      className={"openapi-schema__required"}
+                                    >
+                                      required
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                    >
+                                      Array [
+                                    </div>
+                                  </li><div>
+                                    <span
+                                      className={"badge badge--info"}
+                                    >
+                                      anyOf
+                                    </span><SchemaTabs>
+                                      <TabItem
+                                        label={"MOD1"}
+                                        value={"0-item-properties"}
+                                      >
+                                        <div
+                                          style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                        >
+                                          
+                                          
+                                          string
+                                          
+                                          
+                                        </div>
+                                      </TabItem><TabItem
+                                        label={"MOD2"}
+                                        value={"1-item-properties"}
+                                      >
+                                        <div
+                                          style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                        >
+                                          
+                                          
+                                          integer
+                                          
+                                          
+                                        </div>
+                                      </TabItem>
+                                    </SchemaTabs>
+                                  </div><li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                    >
+                                      ]
+                                    </div>
+                                  </li>
+                                </div>
+                              </details>
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"msg"}
+                              required={true}
+                              schemaName={"Message (string)"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","title":"Message"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"type"}
+                              required={true}
+                              schemaName={"Error Type (string)"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","title":"Error Type"}}
+                            >
+                              
+                            </SchemaItem><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                              >
+                                ]
+                              </div>
+                            </li>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"detail\": [\n    {\n      \"loc\": [\n        \"string\",\n        0\n      ],\n      \"msg\": \"string\",\n      \"type\": \"string\"\n    }\n  ]\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

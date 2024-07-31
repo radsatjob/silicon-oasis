@@ -58,9 +58,28 @@ const config = {
           customCss: './src/css/custom.css',
         },
       }),
-    ],
+    ],  
   ],
 
+  plugins: [
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: "api",
+        docsPluginId: "classic",
+        config: {
+          llamastore: {
+            specPath: "https://raw.githubusercontent.com/liblaber/llama-store/main/spec.yaml",
+            outputDir: "docs/API",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+            },
+          },
+        }
+      },
+    ]
+  ],
+  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

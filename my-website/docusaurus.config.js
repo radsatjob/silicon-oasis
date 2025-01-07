@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'My Portfolio',
+  tagline: 'Radhika is cool :)',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -99,14 +99,14 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
+          /* {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
-          },
+          }, */
         ],
       },
-      footer: {
+     /*  footer: {
         style: 'dark',
         links: [
           {
@@ -150,7 +150,7 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
+      }, */
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,

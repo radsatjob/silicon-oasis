@@ -9,7 +9,7 @@
 
 /* Hero Section */
 .heroBanner {
-  background-color:#a8cff7;
+  background-color: #a8cff7;
   padding: 4rem 2rem;
 }
 
@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 1000 px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -56,6 +56,45 @@
   background-color: #1aa88d;
 }
 
+/* Left Static GIF */
+.heroLeft {
+  flex: 1 1 20%;
+  max-width: 20%;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+.sideGifLeft {
+  width: 100%;
+  height: auto;
+  /* Left GIF is static */
+}
+
+/* Right Animated GIF */
+.heroRight {
+  flex: 1 1 20%;
+  max-width: 20%;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+.sideGifRight {
+  width: 100%;
+  height: auto;
+  /* Right GIF should animate continuously */
+  animation: animateGif 10s infinite linear;
+}
+
+@keyframes animateGif {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hero Image */
 .heroImage {
   flex: 1 1 45%;
   max-width: 45%;

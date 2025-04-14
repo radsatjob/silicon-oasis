@@ -19,6 +19,16 @@ export default function Home() {
         <header className={styles.heroBanner}>
           <div className="container">
             <div className={styles.heroContent}>
+              {/* Static Left GIF */}
+              <div className={styles.heroLeft}>
+                <img
+                  src={useBaseUrl('/img/thinking.gif')}
+                  alt="Left GIF"
+                  className={styles.sideGifLeft}
+                />
+              </div>
+
+              {/* Centered Text with CTA */}
               <div className={styles.heroText}>
                 <h1 className={styles.heroTitle}>Built Docs Like a Pro!</h1>
                 <p className={styles.heroSubtitle}>
@@ -31,12 +41,13 @@ export default function Home() {
                   Get Started
                 </a>
               </div>
-              <div className={styles.heroImage}>
+
+              {/* Animated Right GIF */}
+              <div className={styles.heroRight}>
                 <img
                   src={useBaseUrl('/img/animated.gif')}
-                  alt="Hero Illustration"
-                  width="100"
-                  height="100"
+                  alt="Right GIF"
+                  className={styles.sideGifRight}
                 />
               </div>
             </div>

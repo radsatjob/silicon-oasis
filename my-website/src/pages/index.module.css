@@ -1,115 +1,129 @@
-/* --- Page Heading --- */
+/* Page Heading */
 .pageHeading {
   text-align: center;
-  margin-top: 3rem; /* Adjust this value to control space above the banner */
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
 }
 
-.pageHeading h1 {
-  font-size: 2.5rem; /* Adjust this value to control heading size */
-  color: #333;
-  margin-bottom: 1.5rem;
-}
-
-/* --- Hero Section --- */
-.hero {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0070f3;
-  color: white;
+/* Hero Section */
+.heroBanner {
+  background-color:#a8cff7;
   padding: 4rem 2rem;
-  min-height: 300px;
 }
 
 .heroContent {
-  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000 px;
+  margin: 0 auto;
   text-align: center;
 }
 
+.heroText {
+  flex: 1 1 45%;
+  max-width: 45%;
+  padding: 1rem;
+  margin: 0 1rem; /* Tight margins around text */
+}
+
 .heroTitle {
-  font-size: 3rem; /* Adjusted font size */
-  font-weight: bold;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #1a1a1a;
 }
 
 .heroSubtitle {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #555;
 }
 
 .ctaButton {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #ff9e2c;
+  background-color: #25c2a0;
   color: white;
-  font-weight: bold;
-  text-decoration: none;
+  padding: 0.8rem 2rem;
   border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .ctaButton:hover {
-  background-color: #d86b1e;
+  background-color: #1aa88d;
 }
 
-/* --- Features Section --- */
+.heroImage {
+  flex: 1 1 45%;
+  max-width: 45%;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.heroImage img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Features Section */
 .features {
-  background-color: #f7f8fa;
+  background-color: #ffffff;
   padding: 4rem 2rem;
   text-align: center;
 }
 
 .featuresTitle {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
 }
 
 .featureList {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
 .featureItem {
-  background-color: white;
-  border-radius: 8px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  background-color: #f9f9f9;
   padding: 2rem;
-  width: 30%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.featureItem:hover {
+  transform: translateY(-5px);
 }
 
 .featureItem h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
+  color: #333;
 }
 
 .featureItem p {
-  color: #555;
+  font-size: 1rem;
+  color: #666;
 }
 
-/* --- Call-to-Action Section --- */
+/* CTA Section */
 .ctaSection {
+  background-color: #e8f6f3;
+  padding: 4rem 2rem;
   text-align: center;
-  padding: 3rem 2rem;
-  background-color: #0070f3;
-  color: white;
 }
 
 .ctaTitle {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.gifWrapper {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.animatedGif {
-  max-width: 250px;
-  height: auto;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
 }

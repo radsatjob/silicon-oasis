@@ -18,8 +18,9 @@ export default function Home() {
         {/* Hero Section */}
         <header className={styles.heroBanner}>
           <div className="container">
+
             <div className={styles.heroContent}>
-              {/* Static Left GIF */}
+              {/* Left GIF */}
               <div className={styles.heroLeft}>
                 <img
                   src={useBaseUrl('/img/thinking.gif')}
@@ -42,7 +43,7 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* Animated Right GIF */}
+              {/* Right GIF */}
               <div className={styles.heroRight}>
                 <img
                   src={useBaseUrl('/img/animated.gif')}
@@ -51,6 +52,7 @@ export default function Home() {
                 />
               </div>
             </div>
+
           </div>
         </header>
 

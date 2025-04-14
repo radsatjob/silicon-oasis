@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Portfolio',
-  tagline: 'Radhika is coolest and hittest :)',
+  tagline: 'Radhika is coolest and hottest :)',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

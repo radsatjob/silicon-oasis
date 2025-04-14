@@ -1,23 +1,115 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
+/* --- Page Heading --- */
+.pageHeading {
   text-align: center;
+  margin-top: 3rem; /* Adjust this value to control space above the banner */
+}
+
+.pageHeading h1 {
+  font-size: 2.5rem; /* Adjust this value to control heading size */
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Hero Section --- */
+.hero {
   position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  background-color: #0070f3;
+  color: white;
+  padding: 4rem 2rem;
+  min-height: 300px;
+}
+
+.heroContent {
+  max-width: 800px;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 3rem; /* Adjusted font size */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #ff9e2c;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #d86b1e;
+}
+
+/* --- Features Section --- */
+.features {
+  background-color: #f7f8fa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.featuresTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.featureList {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.featureItem {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.featureItem h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.featureItem p {
+  color: #555;
+}
+
+/* --- Call-to-Action Section --- */
+.ctaSection {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #0070f3;
+  color: white;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.gifWrapper {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.animatedGif {
+  max-width: 250px;
+  height: auto;
 }

@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Portfolio',
-  tagline: 'Radhika is coolest and hittest :)',
+  tagline: 'Radhika is coolest and hottest :)',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -23,7 +23,7 @@ const config = {
   organizationName: 'radsatjob', // Usually your GitHub org/user name.
   projectName: 'silicon-oasis', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+ // onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: false,
 
@@ -90,10 +90,10 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'right',
-            label: 'Tutorial',
+            position: 'left',
+            label: 'Showcase',
           },
-          {to: '/blog', label: 'Blog', position: 'right'},
+          // {to: '/blog', label: 'Blog', position: 'right'},
           /* {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',

@@ -59,21 +59,13 @@ const config = {
 
   plugins: [
     [
-      'docusaurus-plugin-openapi-docs',
+      'docusaurus-plugin-chat-page',
       {
-        id: "api",
-        docsPluginId: "classic",
-        config: {
-          llamastore: {
-            specPath: "https://raw.githubusercontent.com/liblaber/llama-store/main/spec.yaml",
-            outputDir: "docs/API",
-            sidebarOptions: {
-              groupPathsBy: "tag",
-            },
-          },
-        }
+        chatUrl: 'https://tawk.to/chat/67fe1b5f2656e4190ca989aa/1ios9lrcr',
+        pageTitle: 'Chat with Us',
+        pagePath: '/chat',
       },
-    ]
+    ],
   ],
   
   themeConfig:

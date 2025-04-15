@@ -72,9 +72,8 @@
             <link>https://radsatjob.github.io/silicon-oasis/blog/first-blog-post</link>
             <guid>https://radsatjob.github.io/silicon-oasis/blog/first-blog-post</guid>
             <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Where do I start? Way back in 2013 when I first started my TW journey or how and when the fascination of how and why things work the way they were and how I can share this new finding with the folks around?]]></description>
-            <content:encoded><![CDATA[<p>Where do I start? Way back in 2013 when I first started my TW journey or how and when the fascination of how and why things work the way they were and how I can share this new finding with the folks around?</p>
-<p>I am not sure, where this all began.</p>]]></content:encoded>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
             <category>hola</category>
             <category>docusaurus</category>
         </item>

@@ -57,17 +57,6 @@ const config = {
     ],  
   ],
 
-  plugins: [
-    [
-      'docusaurus-plugin-chat-page',
-      {
-        chatUrl: 'https://tawk.to/chat/67fe1b5f2656e4190ca989aa/1ios9lrcr',
-        pageTitle: 'Chat with Us',
-        pagePath: '/chat',
-      },
-    ],
-  ],
-  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -86,7 +75,7 @@ const config = {
             position: 'right',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'right'},
+          { to: '/chat', label: 'Chat with Us', position: 'right' },
           /* {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',

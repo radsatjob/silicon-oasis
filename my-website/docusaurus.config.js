@@ -34,46 +34,43 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-      }),
-    ],  
-  ],
-
-  plugins: [
-    [
-      'docusaurus-plugin-openapi-docs',
-      {
-        id: "api",
-        docsPluginId: "classic",
-        config: {
-          llamastore: {
-            specPath: "https://raw.githubusercontent.com/liblaber/llama-store/main/spec.yaml",
-            outputDir: "docs/API",
-            sidebarOptions: {
-              groupPathsBy: "tag",
-            },
+ 
+    
+    presets: [
+      [
+        '@docusaurus/preset-classic', // Keep this if you're using the classic preset
+        {
+          docs: {
+            sidebarPath: require.resolve('./sidebars.js'),
+            // ... other docs plugin options
+            //routeBasePath: 'docs/guides', // Set the base path for your regular docs
           },
-        }
-      },
-    ]
-  ],
+          theme: {
+            customCss: require.resolve('./src/css/custom.css'),
+          },
+        },
+      ],
+      [
+        'redocusaurus',
+        {
+          specs: [
+            {
+              spec: 'static/openapi/openapi.yaml', // Replace with the actual path to your OpenAPI file
+              route: '/docs/api', // The URL where your API docs will be accessible (e.g., your-website.com/api)
+            },
+            // You can add more API specifications here for multiple APIs or versions
+            // {
+            //   spec: 'https://another-api.example.com/openapi.json',
+            //   route: '/api/v2',
+            // },
+          ],
+          theme: {
+            primaryColor: '#61dafb', // Optional: Customize the primary color of the Redoc UI
+          },
+        },
+      ],
+    ],
+
   
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -93,12 +90,14 @@ const config = {
             position: 'left',
             label: 'Showcase',
           },
-          // {to: '/blog', label: 'Blog', position: 'right'},
-          /* {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          }, */
+
+          {
+            to: '/docs/api',
+            position: 'left',
+            label: 'API',
+          },
+
+          
         ],
       },
      /*  footer: {

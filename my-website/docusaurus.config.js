@@ -96,7 +96,11 @@ const config = {
             position: 'left',
             label: 'API',
           },
-
+          {
+            label: 'Blog',
+            position: 'right',
+            to: '/blog',
+          },
           
         ],
       },
@@ -132,10 +136,7 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+             
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',

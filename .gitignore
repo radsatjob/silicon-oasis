@@ -1,1 +1,2 @@
 *.lock
+GIT_USER=rads@job.com npm run deploy

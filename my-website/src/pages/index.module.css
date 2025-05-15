@@ -1,6 +1,6 @@
 /* Hero banner section */
 .heroBanner {
-  background-image: url('/img/header-bg.jpg'); /* or header-bg-002.jpg */
+  background-image: url('/img/header-bg.jpg'); 
   background-size: cover;
   background-position: center;
   color: rgb(49, 39, 39);

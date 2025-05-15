@@ -16,7 +16,6 @@ export default function Home() {
     <Layout>
       <header className={clsx(styles.heroBanner)}>
         <div className={styles.heroContent}>
-          <div className={styles.tag}>Help Center</div>
           <h1 className={styles.title}>
             Documentation,<br />
             why and how much!
@@ -24,11 +23,8 @@ export default function Home() {
           <p className={styles.subtitle}>
           </p>
           <div className={styles.buttons}>
-            <a className={clsx('button button--lg', styles.demoButton)} href="#demo">
-              View demo
-            </a>
             <a className={clsx('button button--lg', styles.trialButton)} href="#trial">
-              Start free trial
+              Try Me!
             </a>
           </div>
         </div>
@@ -40,7 +36,7 @@ export default function Home() {
             <Grid item xs={12} sm={6} md={4}>
               <RecipeReviewCard 
                 title="Content Strategy"
-                image={useBaseUrl('/img/header-bg.jpg')}
+                image={useBaseUrl('../img/header-bg.jpg')}
                 description="A hearty and comforting stew perfect for cold evenings."
                 expandedContent={[
                   "Brown beef chunks in a large pot.",
@@ -52,7 +48,7 @@ export default function Home() {
             <Grid item xs={12} sm={6} md={4}>
               <RecipeReviewCard 
                 title="API and SDK docs"
-                image={useBaseUrl('/img/header-bg.jpg')}
+                image={useBaseUrl('../img/header-bg.jpg')}
                 description="A hearty and comforting stew perfect for cold evenings."
                 expandedContent={[
                   "Brown beef chunks in a large pot.",
@@ -64,7 +60,7 @@ export default function Home() {
             <Grid item xs={12} sm={6} md={4}>
               <RecipeReviewCard 
                 title="Customer Engagement"
-                image={useBaseUrl('/img/header-bg.jpg')}
+                image={useBaseUrl('../img/header-bg.jpg')}
                 description="A colorful bowl full of fresh veggies and grains."
                 expandedContent={[
                   "Cook quinoa and let cool.",

@@ -23,13 +23,11 @@ const config = {
   organizationName: 'radsatjob', // Usually your GitHub org/user name.
   projectName: 'silicon-oasis', // Usually your repo name.
 
- // onBrokenLinks: 'throw',
+  // onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: false,
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Internationalization
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -41,15 +39,16 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          routeBasePath: 'docs',  // Docs served at /docs
+          sidebarPath: require.resolve('./sidebars.js'), // fix: use require.resolve
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'), // fix: use require.resolve
         },
       }),
-    ],  
+    ],
   ],
 
   plugins: [
@@ -68,19 +67,20 @@ const config = {
           },
         }
       },
-    ]
+    ],
   ],
-  
+
   themeConfig: {
     navbar: {
-      title: 'Help Center',
-      logo: { alt: 'Logo', src: 'img/logo.svg' },
+      title: 'Home',
+      logo: { alt: 'Logo', src: '../img/first-cartoon.png' },
       items: [
-        { to: '/docs', label: 'Documentation', position: 'left' },
-        { to: '/contact', label: 'Contact', position: 'left' },
+        { to: '/docs/intro', label: 'Documentation', position: 'left' },  // Added trailing slash for consistency
+        { to: '/contact', label: 'API', position: 'left' },      // Added leading slash to be absolute path
       ],
     },
-    /* footer: {
+    /*
+    footer: {
       style: 'light',
       links: [
         {
@@ -89,7 +89,8 @@ const config = {
         },
       ],
       copyright: `© ${new Date().getFullYear()} Your Company.`,
-    }, */
+    },
+    */
   },
 };
 

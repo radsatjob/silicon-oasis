@@ -1,61 +1,45 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import React from 'react';
+import CustomCard from '../components/CustomCard';
+import './index.css'; // For cardGrid styles
 
-const FeatureList = [
-  {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Build documentation ground-up, left right and center with all the ps and qs - mind it! :)
-      </>
-    ),
-  },
-  {
-    title: 'Customer-centricity and User Advocate',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-     Adept in thinking and behaving like an end-user all the time!
-      </>
-    ),
-  },
-  {
-    title: 'Powered by Curiosity and Enthusiasm',
-    Svg: require('@site/static/img/ladder-scaffold-stairs-svgrepo-com.svg').default,
-    description: (
-      <>
-        Learning complex concepts to break them down to simple digestible nuggets!
-      </>
-    ),
-  },
-];
+export default function Home() {
+  const handleShare = () => alert('Share clicked!');
+  const handleLearnMore = () => alert('Learn More clicked!');
 
-function Feature({Svg, title, description}) {
+  const cardsData = [
+    {
+      image: '/img/header-bg.jpg',
+      title: 'Card One',
+      subtitle: 'Subtitle One',
+      body: 'This is a description of card one.',
+    },
+    {
+      image: '/img/header-bg-002.jpg',
+      title: 'Card Two',
+      subtitle: 'Subtitle Two',
+      body: 'This is a description of card two.',
+    },
+    {
+      image: '/img/docusaurus.png',
+      title: 'Card Three',
+      subtitle: 'Subtitle Three',
+      body: 'This is a description of card three.',
+    },
+  ];
+
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+    <div className="cardGrid">
+      {cardsData.map(({ image, title, subtitle, body }, idx) => (
+        <CustomCard
+          key={idx}
+          image={image}
+          title={title}
+          subtitle={subtitle}
+          body={body}
+          onShare={handleShare}
+          onLearnMore={handleLearnMore}
+        />
+      ))}
     </div>
-  );
-}
-
-export default function HomepageFeatures() {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
   );
 }

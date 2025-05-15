@@ -1,0 +1,78 @@
+.footer {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+  font-family: sans-serif;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-wrap: nowrap; /* keeps side-by-side layout */
+}
+
+.columns div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.columns h4 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.columns li {
+  margin-bottom: 0.5rem;
+}
+
+.columns a {
+  text-decoration: none;
+  color: #444;
+}
+
+.columns a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.social img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.social img:hover {
+  opacity: 1;
+}
+
+.icon {
+  margin-right: 0.5rem; /* adds spacing */
+  color: #555;
+  width: 1.25rem;        /* ensures consistent space */
+  display: inline-block; /* makes margin take effect */
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;  /* optionally add this instead of margin-right */
+  margin-bottom: 0.5rem;
+}

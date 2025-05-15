@@ -1,88 +1,82 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import clsx from 'clsx';
 import styles from './index.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Grid, Container } from '@mui/material';
+import RecipeReviewCard from '/src/components/RecipeReviewCard';
+import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import Footer from '../components/Footer';
 
 export default function Home() {
+
+  const footerImageUrl = useBaseUrl('/img/animated.gif'); // footer image
+
   return (
-    <Layout
-      title="Docusaurus"
-      description="Easy-to-use, highly customizable static site generator"
-    >
-      <main>
-        {/* Page Heading */}
-        <div className={styles.pageHeading}>
-          <h1>🎉 Welcome to My Site ✨</h1>
+    <Layout>
+      <header className={clsx(styles.heroBanner)}>
+        <div className={styles.heroContent}>
+          <div className={styles.tag}>Help Center</div>
+          <h1 className={styles.title}>
+            Documentation,<br />
+            why and how much!
+          </h1>
+          <p className={styles.subtitle}>
+          </p>
+          <div className={styles.buttons}>
+            <a className={clsx('button button--lg', styles.demoButton)} href="#demo">
+              View demo
+            </a>
+            <a className={clsx('button button--lg', styles.trialButton)} href="#trial">
+              Start free trial
+            </a>
+          </div>
         </div>
+      </header>
 
-        {/* Hero Section */}
-        <header className={styles.heroBanner}>
-          <div className="container">
-
-            <div className={styles.heroContent}>
-              {/* Left GIF */}
-              <div className={styles.heroLeft}>
-                <img
-                  src={useBaseUrl('/img/thinking.gif')}
-                  alt="Left GIF"
-                  className={styles.sideGifLeft}
-                />
-              </div>
-
-              {/* Centered Text with CTA */}
-              <div className={styles.heroText}>
-                <h1 className={styles.heroTitle}>Built Docs Like a Pro!</h1>
-                <p className={styles.heroSubtitle}>
-                  A culmination of expertise and interest!
-                </p>
-                <a
-                  href="https://github.com/radsatjob/silicon-oasis"
-                  className={styles.ctaButton}
-                >
-                  Get Started
-                </a>
-              </div>
-
-              {/* Right GIF */}
-              <div className={styles.heroRight}>
-                <img
-                  src={useBaseUrl('/img/animated.gif')}
-                  alt="Right GIF"
-                  className={styles.sideGifRight}
-                />
-              </div>
-            </div>
-
-          </div>
-        </header>
-
-        {/* Features Section */}
-        <section className={styles.features}>
-          <h2 className={styles.featuresTitle}>About Me</h2>
-          <div className={styles.featureList}>
-            <div className={styles.featureItem}>
-              <h3>Easy to Work with</h3>
-              <p>Quick setup with minimal configuration.</p>
-            </div>
-            <div className={styles.featureItem}>
-              <h3>Highly Passionate</h3>
-              <p>Tailor your website to match your brand.</p>
-            </div>
-            <div className={styles.featureItem}>
-              <h3>Going Beyond</h3>
-              <p>Manage multiple versions of your docs with ease.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className={styles.ctaSection}>
-          <h2 className={styles.ctaTitle}>Ready to Build Your Docs?</h2>
-          <a href="https://google.com" className={styles.ctaButton}>
-            Start Now
-          </a>
-        </section>
-      </main>
+      <main className={styles.main}>
+        <Container sx={{ mt: 6, mb: 6 }}>
+          <Grid container spacing={4} justifyContent="center">
+            <Grid item xs={12} sm={6} md={4}>
+              <RecipeReviewCard 
+                title="Content Strategy"
+                image={useBaseUrl('/img/header-bg.jpg')}
+                description="A hearty and comforting stew perfect for cold evenings."
+                expandedContent={[
+                  "Brown beef chunks in a large pot.",
+                  "Add vegetables and simmer with broth for 2 hours", 
+                  "Season with herbs and serve hot."
+                ]}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <RecipeReviewCard 
+                title="API and SDK docs"
+                image={useBaseUrl('/img/header-bg.jpg')}
+                description="A hearty and comforting stew perfect for cold evenings."
+                expandedContent={[
+                  "Brown beef chunks in a large pot.",
+                  "Add vegetables and simmer with broth for 2 hours.",
+                  "Season with herbs and serve hot."
+                ]}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <RecipeReviewCard 
+                title="Customer Engagement"
+                image={useBaseUrl('/img/header-bg.jpg')}
+                description="A colorful bowl full of fresh veggies and grains."
+                expandedContent={[
+                  "Cook quinoa and let cool.",
+                  "Chop fresh veggies and roast some.",
+                  "Assemble bowl with quinoa, veggies, and dressing."
+                ]}
+              />
+            </Grid>
+          </Grid>
+        </Container>
+      </main>    
+        <Footer />
     </Layout>
   );
 }

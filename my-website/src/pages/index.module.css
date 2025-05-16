@@ -1,6 +1,6 @@
-/* Hero banner section */
+/* -------------------- Hero Banner -------------------- */
 .heroBanner {
-  background-image: url('/img/header-bg.jpg'); 
+  background-image: url('/img/header-bg.jpg');
   background-size: cover;
   background-position: center;
   color: rgb(49, 39, 39);
@@ -9,13 +9,11 @@
   position: relative;
 }
 
-/* Container for hero content */
 .heroContent {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Tag / badge style */
 .tag {
   background: rgba(255, 255, 255, 0.2);
   padding: 0.4rem 1.2rem;
@@ -26,7 +24,6 @@
   font-size: 1.2rem;
 }
 
-/* Title styling */
 .title {
   font-size: 3rem;
   font-weight: 700;
@@ -34,14 +31,13 @@
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Subtitle styling */
 .subtitle {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Button container */
+/* -------------------- Buttons -------------------- */
 .buttons {
   display: flex;
   justify-content: center;
@@ -49,17 +45,20 @@
   flex-wrap: wrap;
 }
 
-/* Demo button style */
+.demoButton,
+.trialButton {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
 .demoButton {
   background: #fff;
   color: #000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .demoButton:hover,
@@ -69,16 +68,9 @@
   outline: none;
 }
 
-/* Trial button style */
 .trialButton {
   background: #2e7d32;
   color: #fff;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .trialButton:hover,
@@ -87,12 +79,11 @@
   outline: none;
 }
 
-/* Main content padding */
+/* -------------------- Main Layout -------------------- */
 .main {
   padding: 4rem 2rem;
 }
 
-/* Card grid container */
 .cardGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -103,43 +94,39 @@
   min-height: 100vh;
 }
 
-
+/* -------------------- Cards -------------------- */
 .card {
   flex: 1 1 calc(33.333% - 2rem);
-  background: rgba(255, 255, 255, 0.1); /* Slightly more visible background */
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 1rem;
-  overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   color: white;
   text-decoration: none;
-  
-  /* New border and color */
-  border: 2px solid #4caf50; /* green border, adjust color as you want */
+  border: 2px solid #4caf50;
   box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.6); /* stronger shadow on hover */
+  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.6);
 }
 
-/* Divider line between image and content */
 .cardImage {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-bottom: 2px solid #4caf50; /* divider line */
-  margin-bottom: 1rem; /* spacing below divider */
+  border-bottom: 2px solid #4caf50;
+  margin-bottom: 1rem;
 }
 
+/* -------------------- Footer -------------------- */
 .footer {
   background-color: #f5f8fa;
   padding: 20px 0;
   text-align: center;
-  font-family: Arial, sans-serif;
   color: #fbf6f6;
   margin-top: 40px;
 }
@@ -179,3 +166,240 @@
   font-size: 14px;
   color: #777;
 }
+
+/* -------------------- Testimonials -------------------- */
+.colored-testimonials {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f5f7fa;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.colored-testimonials h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: 700;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  color: white;
+  max-width: 320px;
+  border-radius: 15px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 550px;
+  min-height: 140px;
+  user-select: none;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+
+.testimonial-card .author {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.testimonial-card strong {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.testimonial-card span {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.testimonial-card:not(.active) {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+.testimonial-card.active {
+  filter: brightness(1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  cursor: default;
+}
+
+/* Color Variants */
+.card-purple {
+  background: linear-gradient(135deg, #6b46c1, #9f7aea);
+  box-shadow: 0 0 15px #8e72d7;
+}
+
+.card-teal {
+  background: linear-gradient(135deg, #319795, #38b2ac);
+  box-shadow: 0 0 15px #33b1aa;
+}
+
+.card-orange {
+  background: linear-gradient(135deg, #dd6b20, #f6ad55);
+  box-shadow: 0 0 15px #f4a661;
+}
+
+/* -------------------- Tabs -------------------- */
+.testimonial-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.tab-label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.tab-label:hover {
+  color: #4caf50;
+}
+
+.active-tab {
+  border-bottom-color: #4caf50;
+  color: #111;
+}
+
+/* -------------------- Alt Stacked Testimonials -------------------- */
+.testimonialsSection {
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.testimonialHeading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.tabBar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  padding-bottom: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.tab:hover {
+  color: #000;
+}
+
+.activeTab {
+  border-bottom: 2px solid #000;
+}
+
+.testimonialCards {
+  position: relative;
+  height: 300px; /* Adjust to control stack height */
+  margin-top: 1rem;
+}
+
+.stackedCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  width: 90%;
+  padding: 1.5rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+
+.stackedCard p {
+  font-size: 1rem;
+  margin: 0 0 1rem;
+}
+
+.stackedCard .author {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.stackedCard.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 3;
+  pointer-events: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.stackedCard:not(.active) {
+  opacity: 0.6;
+  transform: translateY(20px) scale(0.95);
+}
+
+.stackedCard.above {
+  opacity: 1;
+  transform: translate(-50%, -80%) scale(0.95); /* goes above the active card */
+  z-index: 2;
+}
+
+.stackedCard.below {
+  opacity: 1;
+  transform: translate(-50%, -20%) scale(0.95); /* goes below the active card */
+  z-index: 1;
+}
+
+.cardPurple {
+  background: linear-gradient(135deg, #6b46c1, #9f7aea);
+  color: white;
+  border-left: 6px solid #a78bfa;
+  z-index: 1;
+}
+
+.cardTeal {
+  background: linear-gradient(135deg, #319795, #38b2ac);
+  color: white;
+  border-left: 6px solid #14b8a6;
+  z-index: 2;
+}
+
+.cardOrange {
+  background: linear-gradient(135deg, #dd6b20, #f6ad55);
+  color: white;
+  border-left: 6px solid #f97316;
+  z-index: 1;
+}
+

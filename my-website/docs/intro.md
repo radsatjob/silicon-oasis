@@ -12,3 +12,7 @@ id: Intro
 - Razorpay
 - nference
 
+
+![Docusaurus logo](/img/docusaurus.png)
+
+

@@ -28,8 +28,3 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
-
-footer.footer {
-  background-image: none !important;
-  background-color: #ffffff !important; /* Or your preferred color */
-}

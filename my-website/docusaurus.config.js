@@ -73,7 +73,7 @@ const config = {
   themeConfig: {
     navbar: {
       title: 'Home',
-      logo: { alt: 'Logo', src: '../img/first-cartoon.png' },
+      logo: { alt: 'Logo', src: '/img/first-cartoon.png' },
       items: [
         { to: '/docs/intro', label: 'Documentation', position: 'left' },  // Added trailing slash for consistency
         { to: '/contact', label: 'API', position: 'left' },      // Added leading slash to be absolute path

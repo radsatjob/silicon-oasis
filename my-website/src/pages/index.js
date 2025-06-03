@@ -5,14 +5,15 @@ import clsx from 'clsx';
 import styles from './index.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { Grid, Container } from '@mui/material';
-import RecipeReviewCard from '/src/components/RecipeReviewCard';
 import Footer from '../components/Footer';
 import HorizontalAutoScrollCarousel from '/src/components/HorizontalAutoScrollCarousel';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Divider from '../components/Divider';
+import CustomCard from '../components/CustomCard';
 
 export default function Home() {
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   const testimonials = [
@@ -42,6 +43,24 @@ export default function Home() {
     },
   ];
 
+  const cardsData = [
+    {
+      backgroundImage: 'img/bg001.jpg',
+      screenshotImage: 'img/api-page.png',
+      text: 'Static site generators like Docusaurus, Sphunx, Slate and Theneo',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x400?text=Background+2',
+      screenshotImage: 'https://via.placeholder.com/240x160?text=Screenshot+2',
+      text: 'Taryttaayyayayayya aytatabatahnatabtaatabatbatabatnnttatatattattatatatat',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x400?text=Background+2',
+      screenshotImage: 'https://via.placeholder.com/240x160?text=Screenshot+2',
+      text: 'Taryttaayyayayayya aytatabatahnatabtaatabatbatabatnnttatatattattatatatat',
+    },
+  ];
+  
   // Determine card position for stacking and visibility
   const getPositionClass = (index) => {
     if (index === activeIndex) return styles.active;
@@ -68,7 +87,6 @@ export default function Home() {
       </header>
 
       <Divider />
-
       <div>
         <h2 className={styles.subtitle} align="center">
           Worked in Enterprises and Startups
@@ -80,50 +98,22 @@ export default function Home() {
       </Container>
 
       <main className={styles.main}>
-        <Container sx={{ mt: 6, mb: 6 }}>
-          <Grid container spacing={4} justifyContent="center">
-            <Grid item xs={12} sm={6} md={4}>
-              <RecipeReviewCard
-                title="Content Strategy"
-                image={useBaseUrl('/img/header-bg.jpg')}
-                description="A hearty and comforting stew perfect for cold evenings."
-                expandedContent={[
-                  "Brown beef chunks in a large pot.",
-                  "Add vegetables and simmer with broth for 2 hours",
-                  "Season with herbs and serve hot."
-                ]}
-              />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <RecipeReviewCard
-                title="API and SDK docs"
-                image={useBaseUrl('/img/header-bg.jpg')}
-                description="A hearty and comforting stew perfect for cold evenings."
-                expandedContent={[
-                  "Brown beef chunks in a large pot.",
-                  "Add vegetables and simmer with broth for 2 hours.",
-                  "Season with herbs and serve hot."
-                ]}
-              />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <RecipeReviewCard
-                title="Customer Engagement"
-                image={useBaseUrl('/img/header-bg.jpg')}
-                description="A colorful bowl full of fresh veggies and grains."
-                expandedContent={[
-                  "Cook quinoa and let cool.",
-                  "Chop fresh veggies and roast some.",
-                  "Assemble bowl with quinoa, veggies, and dressing."
-                ]}
-              />
-            </Grid>
-          </Grid>
-        </Container>
 
         <Divider />
 
-        <section className={styles.testimonialsSection}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+      {cardsData.map((card, idx) => (
+        <CustomCard
+          key={idx}
+          backgroundImage={card.backgroundImage}
+          screenshotImage={card.screenshotImage}
+          text={card.text}
+        />
+      ))}
+    </div>
+
+    <Divider />
+      <section className={styles.testimonialsSection}>
           <h2 className={styles.testimonialHeading}>Feedback Matters</h2>
 
           <div className={styles.tabBar} role="tablist" aria-label="Testimonial categories">

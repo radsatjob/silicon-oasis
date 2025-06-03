@@ -1,71 +1,22 @@
-.card {
-    width: 320px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background: #fff;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    transition: box-shadow 0.3s ease;
-    cursor: pointer;
+.custom-card {
+    margin: 16px;
+    transition: transform 0.3s ease;
   }
   
-  .card:hover {
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  .custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   
-  .cardMedia {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+  .background-image {
+    /* extra styles if needed */
   }
   
-  .cardContent {
-    padding: 1rem 1.25rem;
-    flex-grow: 1;
+  .screenshot-image {
+    transition: transform 0.3s ease;
   }
   
-  .cardTitle {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  
-  .cardSubtitle {
-    margin: 0.25rem 0 1rem 0;
-    font-weight: 500;
-    color: #666;
-  }
-  
-  .cardBody {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 1rem;
-  }
-  
-  .cardActions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    padding: 0.75rem 1.25rem;
-    border-top: 1px solid #eee;
-  }
-  
-  .cardButton {
-    background: transparent;
-    border: none;
-    color: #1976d2;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .cardButton:hover,
-  .cardButton:focus {
-    background-color: rgba(25, 118, 210, 0.1);
-    outline: none;
+  .custom-card:hover .screenshot-image {
+    transform: translateX(-50%) scale(1.05);
   }
   

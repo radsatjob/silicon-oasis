@@ -50,7 +50,7 @@ const config = {
           },
         },
       ],
-      [
+     /*  [
         'redocusaurus',
         {
           specs: [
@@ -68,7 +68,7 @@ const config = {
             primaryColor: '#61dafb', // Optional: Customize the primary color of the Redoc UI
           },
         },
-      ],
+      ], */
     ],
 
   

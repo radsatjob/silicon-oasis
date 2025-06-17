@@ -151,6 +151,32 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    plugins: [
+      [
+        require.resolve('@cmfcmf/docusaurus-search-local'),
+        {
+          indexDocs: true,
+          indexPages: true,
+          indexBlog: false,
+          language: 'en',
+    
+          // ✅ This block makes frontmatter fields searchable
+         /*  transformContent: ({ content, frontMatter }) => {
+            const keywords = Array.isArray(frontMatter.keywords)
+              ? frontMatter.keywords.join(' ')
+              : frontMatter.keywords || '';
+    
+            const tags = Array.isArray(frontMatter.tags)
+              ? frontMatter.tags.join(' ')
+              : frontMatter.tags || '';
+    
+            const category = frontMatter.category || '';
+    
+            return `${content}\n${keywords}\n${tags}\n${category}`;
+          }, */
+        },
+      ],
+    ],       
 };
 
 export default config;

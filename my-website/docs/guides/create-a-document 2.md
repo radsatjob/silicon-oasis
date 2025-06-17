@@ -1,5 +1,19 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
+id: propensity-matching
+title: How do I do propensity matching between cohorts?
+description: Guide to performing propensity score matching to compare and balance patient cohorts
+tags:
+  - cohort-visualizer
+  - cohort-comparison
+  - propensity-matching
+  - statistical-methods
+keywords:
+  - "propensity score matching"
+  - "compare patient cohorts"
+  - "balance cohorts"
+  - "cohort matching technique"
+category: advanced-analysis
 ---
 
 # Create a Document

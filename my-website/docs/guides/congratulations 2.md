@@ -1,8 +1,22 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
+id: what-is-cohort-visualizer
+title: What is Cohort Visualizer?
+description: Introduction to the Cohort Visualizer tool for analyzing patient groups using clinical data
+tags:
+  - cohort-visualizer
+  - tool-overview
+  - clinical-analytics
+  - data-visualization
+  - clinical-analytics-dashboard
+keywords:
+  - cohort visualizer
+  - patient cohort analysis
+  - health data tool
+category: product-overview
 ---
 
-# Congratulations Radhika!!!!
+# What is Cohort Visualizer?
 
 You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
 
@@ -20,3 +34,4 @@ Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://
 - Add a [search bar](https://docusaurus.io/docs/search)
 - Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
 - Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+

@@ -1,8 +1,23 @@
 ---
-sidebar_position: 6
+sidebar_position: 3
+id: cohort-filters
+title: What are the different filters that I can use for creating cohorts?
+description: Explore filter types available in the Cohort Visualizer, such as diagnosis, medication, demographics
+tags:
+  - cohort-visualizer
+  - cohort-filters
+  - clinical-data-filters
+  - how-to
+keywords:
+  - "cohort filters"
+  - "filter patients by diagnosis"
+  - "filter by medication"
+  - "filter by demographics"
+category: how-to
+
 ---
 
-# Congratulations Radhika!!!!
+# How to use Cohort filters?
 
 You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
 
